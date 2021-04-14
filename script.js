@@ -10,7 +10,7 @@ var numArr = num.split("");
 var sym = "!#$%&\()*+,-./:;<=>?@^[\\]^_`{|}~";
 var symArr = sym.split("");
 
-alert("Welcome to Stephen's Password Generator.  Please click 'ok' to begin!");
+alert("Welcome to Stephen's Password Generator.  Please click 'ok' then 'generate password' to begin!");
 
 // Write password to the #password input
 function writePassword() {
