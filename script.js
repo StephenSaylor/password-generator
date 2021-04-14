@@ -15,15 +15,18 @@ alert("Welcome to Stephen's Password Generator.  Please click 'ok' then 'generat
 function generatePassword(){
   var allCharacters = [];
   var resultPass = "";
-  var pwLength = prompt("How many characters would you like? (Between 8-128)")
+  var pwLength = prompt("How many characters would you like? (Between 8-128)");
   if(pwLength <8 || pwLength>128){
     alert("Please keep the character length between 8-128")
-  else {
-    if(confirm)
-
   }
-
-}
+  else {
+    if(confirm("Would you like uppercase letters?")){
+      Array.prototype.push.apply(allCharacters, abcUpperArr);  
+    }
+    if(confirm("Would you like lowercase letters?")){
+      Array.prototype.push.apply(allCharacters, abcLowerArr)
+    }
+  }
 
 
 // Write password to the #password input
