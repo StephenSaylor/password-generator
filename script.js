@@ -24,9 +24,7 @@ function generatePassword(){
   else {
       if(confirm("Would you like uppercase letters?")){
         allCharacters = allCharacters.concat(abcUpperArr);  
-      }
-      console.log("chars", allCharacters)
-      
+      } 
       if(confirm("Would you like lowercase letters?")){
         allCharacters = allCharacters.concat(abcLowerArr);
       }
