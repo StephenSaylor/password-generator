@@ -14,9 +14,6 @@ alert("Welcome to Stephen's Password Generator.  Please click 'ok' then 'generat
 function generatePassword(){
   var allCharacters = [];
   var resultPassword = "";
-  console.log("heyoo")
-
-  
   var pwLength = prompt("How many characters would you like? (Between 8-128)");
   
   if(pwLength <8 || pwLength>128){
@@ -49,20 +46,13 @@ function generatePassword(){
   return resultPassword
 }
 
-
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-
-
-
-
 
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-
-  
   
   passwordText.value = password;
 }
