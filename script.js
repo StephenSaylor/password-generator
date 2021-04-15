@@ -23,16 +23,18 @@ function generatePassword(){
   
   else {
       if(confirm("Would you like uppercase letters?")){
-        Array.prototype.push.apply(allCharacters, abcUpperArr);  
+        allCharacters = allCharacters.concat(abcUpperArr);  
       }
+      console.log("chars", allCharacters)
+      
       if(confirm("Would you like lowercase letters?")){
-        Array.prototype.push.apply(allCharacters, abcLowerArr);
+        allCharacters = allCharacters.concat(abcLowerArr);
       }
       if(confirm("Would you like numbers?")){
-        Array.prototype.push.apply(allCharacters, numArr);
+        allCharacters = allCharacters.concat(numArr);
       }
       if(confirm("Would you like symbols?")){
-        Array.prototype.push.apply(allCharacters, symArr);
+        allCharacters = allCharacters.concat(symArr);
       }
       if(allCharacters.length===0){
         alert("You must select at least one (1) type of character for your password");
